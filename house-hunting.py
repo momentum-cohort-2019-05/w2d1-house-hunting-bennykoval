@@ -19,7 +19,11 @@ else:
 
 while current_savings < down_cost:
     months += 1
-    returns = current_savings * (returns / 12)
-    current_savings += returns + monthly_savings 
-
+    current_savings += monthly_savings + (current_savings * (returns / 12))
+    #print("Debug returns " + str(returns))
+    #print("Debug current_savings ") + (str(current_savings))
+    #print("Debug months ") + (int(months))
+    #I AM SCREAMING!
+    
 print("Number of months: ", months)
+
