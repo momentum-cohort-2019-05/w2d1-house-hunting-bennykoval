@@ -1,6 +1,6 @@
 portion_down_payment = 0.25
 r = 0.04
-annual_salary * portion_down_paymnt = current_savings 
+annual_salary * portion_down_paymnt == current_savings 
 
 annual_salary_as_str = input("Enter your annual salary: ")
 annual_salary = int(annual_salary_as_str)
