@@ -24,6 +24,6 @@ while current_savings < down_cost:
     #print("Debug current_savings ") + (str(current_savings))
     #print("Debug months ") + (int(months))
     #I AM SCREAMING!
-    
+
 print("Number of months: ", months)
 
