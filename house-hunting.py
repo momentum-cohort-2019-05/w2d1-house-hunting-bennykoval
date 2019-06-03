@@ -8,9 +8,12 @@ portion_saved = float(portion_saved_as_str)
 cost_of_home_as_str = input("Enter the cost of your dream home: ")
 cost_of_home = int(cost_of_home_as_str)
 
-if annual_salary > 0
+monthly_income = (annual_salary / 12)
+current_savings = (monthly_income + (monthly_income * r))
+
+if annual_salary > 0:
     current_savings = (annual_salary * portion_down_payment)
 else: 
     print("Sorry - you have no income to save!")
 
-print("Number of months: ", (current_savings + (current_savings * r/12)))
+print("Number of months: ", (current_savings + (current_savings * r)
