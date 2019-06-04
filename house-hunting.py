@@ -17,17 +17,15 @@ down_cost = cost_of_home * portion_down_payment
 if annual_salary > 0:
     monthly_savings = (annual_salary / 12) * portion_saved
 
-    while current_savings < down_cost:
+else: 
+    print("Sorry - you have no income to save!") #prevent infinite loop/divison by 0
+
+while current_savings < down_cost:
     months += 1
     current_savings += monthly_savings + (current_savings * (returns / 12))
     #print("Debug returns " + str(returns))
     #print("Debug current_savings ") + (str(current_savings))
     #print("Debug months ") + (int(months))
-
-else: 
-    print("Sorry - you have no income to save!") #prevent infinite loop/divison by 0
-
-
 
 print("Number of months: ", months)
 
