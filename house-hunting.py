@@ -18,7 +18,7 @@ if annual_salary > 0:
     monthly_savings = (annual_salary / 12) * portion_saved
 
 else: 
-    print("Sorry - you have no income to save!")
+    print("Sorry - you have no income to save!") #prevent infinite loop/divison by 0
 
 while current_savings < down_cost:
     months += 1
@@ -26,7 +26,6 @@ while current_savings < down_cost:
     #print("Debug returns " + str(returns))
     #print("Debug current_savings ") + (str(current_savings))
     #print("Debug months ") + (int(months))
-    #I AM SCREAMING!
 
 print("Number of months: ", months)
 
